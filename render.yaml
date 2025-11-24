@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: astral-ponder
+    env: node
+    buildCommand: pnpm install && pnpm codegen
+    startCommand: pnpm start
+    envVars:
+      - key: DATABASE_SCHEMA
+        value: public

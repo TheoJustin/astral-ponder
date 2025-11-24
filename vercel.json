@@ -1,5 +1,13 @@
 {
   "buildCommand": "pnpm codegen",
   "installCommand": "pnpm install",
-  "framework": null
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.ts"
+    }
+  ],
+  "env": {
+    "DATABASE_SCHEMA": "public"
+  }
 }
