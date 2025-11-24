@@ -6,5 +6,12 @@
   "deploy": {
     "startCommand": "pnpm start",
     "healthcheckPath": "/health"
+  },
+  "environments": {
+    "production": {
+      "variables": {
+        "DATABASE_SCHEMA": "public"
+      }
+    }
   }
 }
