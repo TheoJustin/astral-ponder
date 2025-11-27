@@ -1,5 +1,6 @@
 import { ponder } from "ponder:registry";
 import { worldPurchase, world, worldOwner } from "ponder:schema";
+import "./erc721";
 
 ponder.on("WorldList:WorldPurchased", async ({ event, context }) => {
   const { buyer, worldName, price } = event.args;
